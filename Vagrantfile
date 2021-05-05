@@ -78,6 +78,7 @@ Vagrant.configure("2") do |config|
               cp ~vagrant/.ssh/auth* ~root/.ssh
 	      yum install -y mdadm smartmontools hdparm gdisk
               
+              #homework
               mdadm --create --verbose /dev/md0 -l 6 -n 6 /dev/sd{b,c,d,e,f,g}
               mkdir /etc/mdadm
               touch /etc/mdadm/mdadm.conf
