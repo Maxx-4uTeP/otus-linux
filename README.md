@@ -40,6 +40,6 @@ Vagrant файл: <https://github.com/Maxx-4uTeP/otus-linux/blob/master/Vagrantf
     otuslinux: part5
 
 
-Для монтрования после перезапуска добевлена строка:
+Для монтрования после перезапуска добавлена строка:
 
     for i in $(seq 1 5); do echo "/dev/md0p$i /raid/part$i ext4 defaults 0 0" >> /etc/fstab; done
